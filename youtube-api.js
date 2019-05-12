@@ -9,6 +9,7 @@ const youtubeSearch = (term) => {
     key: API_KEY,
     q: term,
     type: 'video',
+    maxResults: 15,
   };
 
   return new Promise((resolve, reject) => {
